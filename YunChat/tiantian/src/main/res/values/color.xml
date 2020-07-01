@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <drawable name="blue">#0000FF</drawable>
+  <drawable name="white">#FFFFFF</drawable>
+  <drawable name="black">#000000</drawable>
+  <color name="red">#FF0000</color>
+  <color name="inputTitle">#CC0000</color>
+  <color name="inputTEXT">#FFFF00</color>
+  <color name="menuBack">#DDDEDF</color>
+  <color name="font_balck">#000000</color> 
+  <color name="menuTextCol">#003224</color> 
+  <color name="green">#003224</color> 
+</resources>

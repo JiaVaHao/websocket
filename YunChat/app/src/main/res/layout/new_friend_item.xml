@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/new_friend_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+        <TextView
+            android:id="@+id/new_friend_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="姓名"
+            android:textColor="#2B2828"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="75dp"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+           <Button
+               android:id="@+id/accept_new_friend"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="同意"/>
+            <Button
+                android:id="@+id/reject_new_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拒绝"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/new_friend_id"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textSize="0dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

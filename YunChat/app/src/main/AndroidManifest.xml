@@ -1,0 +1,57 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jwh.yunchat">
+    <uses-permission  android:name="android.permission.INTERNET"/>
+    <!--读写内存块权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--调用相机权限-->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!--android 9.0之后使用前台服务，需要添加权限-->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.jwh.yunchat.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.jwh.yunchat.activity.RegisterActivity"></activity>
+        <activity android:name="com.jwh.yunchat.activity.ChatActivity"></activity>
+        <activity android:name="com.jwh.yunchat.activity.LoginActivity"></activity>
+        <activity android:name="com.jwh.yunchat.activity.MineActivity"></activity>
+        <activity android:name="com.jwh.yunchat.activity.ChatListActivity"></activity>
+        <activity android:name="com.jwh.yunchat.activity.FriendListActivity"></activity>
+        <activity android:name="com.jwh.yunchat.activity.ForgetPasswordActivity"></activity>
+        <activity android:name="com.jwh.yunchat.activity.CompleteUserInfoActivity"></activity>
+
+        <provider
+            android:authorities="com.jwh.yunchat.provider"
+            android:name="com.jwh.yunchat.provider.FriendProvider"
+            android:enabled="true"
+            android:exported="true"/>
+
+        <!--本地图库一定要有的-->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.jwh.yunchat.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+</manifest>
+

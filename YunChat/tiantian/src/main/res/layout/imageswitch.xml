@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/widget34"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<Gallery android:id="@+id/gallery" android:layout_width="fill_parent"
+		android:layout_height="110px" android:layout_marginTop="10px"
+		android:layout_alignParentLeft="true">
+	</Gallery>
+	<ImageSwitcher android:id="@+id/imageswitch"
+		android:layout_width="90px" android:layout_height="90px"
+		android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+		android:layout_alignBottom="@+id/gallery">
+	</ImageSwitcher>
+</RelativeLayout>

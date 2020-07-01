@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设备型号:" />
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="系统版本:" />
+
+            <TextView
+                android:id="@+id/num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机串号:" />
+
+            <TextView
+                android:id="@+id/driver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运营商:" />
+
+            <TextView
+                android:id="@+id/network_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="网络类型:" />
+
+            <TextView
+                android:id="@+id/isroot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是否已root:" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:background="#ffffaa66" >
+    </View>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/cpu_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CPU型号:" />
+
+            <TextView
+                android:id="@+id/cpu_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CPU核心数:" />
+
+            <TextView
+                android:id="@+id/max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最高频率:" />
+
+            <TextView
+                android:id="@+id/min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最低频率:" />
+
+            <TextView
+                android:id="@+id/now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前频率:" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:background="#ffffaa66" >
+    </View>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/run_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运行内存总量:" />
+
+            <TextView
+                android:id="@+id/phone_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机内存总量:" />
+
+            <TextView
+                android:id="@+id/sd_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SD卡内存总量:" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:background="#ffffaa66" >
+    </View>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/resolution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="屏幕分辨率:" />
+
+            <TextView
+                android:id="@+id/density"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="像素密度:" />
+
+            <TextView
+                android:id="@+id/touch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="多点触控:" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:background="#ffffaa66" >
+    </View>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/camera_px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="摄像头像素:" />
+
+            <TextView
+                android:id="@+id/camera_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="摄像头最大照片尺寸:" />
+
+            <TextView
+                android:id="@+id/light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="闪光灯:" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:background="#ffffaa66" >
+    </View>
+  
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/wifi_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WIFI连接到:" />
+
+            <TextView
+                android:id="@+id/wifi_ip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WIFI地址:" />
+
+            <TextView
+                android:id="@+id/wifi_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WIFI连接速度:" />
+
+            <TextView
+                android:id="@+id/mac_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MAC地址:" />
+
+            <TextView
+                android:id="@+id/bluetooth_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="蓝牙状态:" />
+        </LinearLayout>
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>

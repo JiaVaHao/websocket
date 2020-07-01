@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+android:id="@+id/widget29"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical"
+xmlns:android="http://schemas.android.com/apk/res/android"
+>
+<TextView
+	android:id="@+id/tv_enter_file_name"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="请输入备份文件的文件名\n该文件该置于SD卡的根目录zpContact文件夹下">
+</TextView>
+	<EditText
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/et_enter_file_name"
+		></EditText>
+		
+</LinearLayout>
+
+
+

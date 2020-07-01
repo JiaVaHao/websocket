@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, logoActivity!</string>
+    <string name="app_name">天天多功能手机助手</string>
+    <string name="menu_telelist">通讯录</string>
+    <string name="menu_battery">电池管理</string>
+    <string name="menu_camera">照相机</string>
+    <string name="menu_clock">闹钟</string>
+    <string name="menu_chat">聊天</string>
+    <string name="menu_hard">硬件加速</string>
+    <string name="menu_soft">软件管家</string>
+    <string name="str_picdel">删除</string>
+    <string name="str_picsave">保存</string>
+    <string name="menu_quick">手机加速</string>
+	<string name="speed">1、快速充电       \n等待中</string>
+     <string name="finish">2、循环充电        \n等待中</string>
+     <string name="trickle">3、涓流充电       \n等待中</string>
+     <string name="current_power">当前电量：</string>
+     <string name="battery_states">电池状态： </string>
+     <string name="battery_temp">电池温度： </string>
+     <string name="vol">电池电压： </string>
+     <string name="battery_use_states">电池使用状况： </string>
+     <string name="app_title">应用名称 </string>
+     <string name="service_count">运行服务数量</string>
+     <string name="memory_percent">占用内存大小</string>
+	 <string name="start_clock">开启闹钟</string>
+     <string name="set_time">设置时间</string>
+     <string name="str_systemapp">系统程序</string>
+    <string name="str_thirdapp">用户程序</string>
+	<string name="menu_intro">  </string>
+    <array name="choice">
+        <item name="detail">详细信息</item>
+        <item name="uninstall">卸载程序</item>
+    </array>
+    <array name="choice1">
+        <item name="phone">电话</item>
+        <item name="sms">短信</item>
+    </array>
+        <string name="rec">开始录音</string>
+        <string name="video">开始录像</string>
+
+</resources>

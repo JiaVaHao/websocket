@@ -1,0 +1,3 @@
+rootProject.name='YunChat'
+include ':app'
+include ':tiantian'

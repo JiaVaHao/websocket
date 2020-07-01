@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="socket_chat" />
+
+    <version value="9" />
+
+    <list>
+        <mapping class="com.jwh.yunchat.entity.Owner"/>
+        <mapping class="com.jwh.yunchat.entity.Friend"/>
+        <mapping class="com.jwh.yunchat.entity.Message"/>
+    </list>
+
+</litepal>

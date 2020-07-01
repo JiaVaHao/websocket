@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jwh.dobotochatserver.dao.MessageDao">
+    <!-- 添加消息 -->
+    <insert id="insert" parameterType="com.jwh.dobotochatserver.entity.Message">
+        insert into message(senderId,receiverId,msg_type,content,create_time)
+        values(#{senderId},#{receiverId},#{msgType},#{content},#{createTime})
+    </insert>
+    <!--更改消息阅读状态-->
+    <update id="changeReadStatus" parameterType="com.jwh.dobotochatserver.entity.Message">
+        update message set is_read=1 where id=#{id}
+    </update>
+    <!--删除已读消息-->
+    <delete id="delete">
+        delete from message where is_read=1
+    </delete>
+    <!--查询未读消息-->
+    <select id="getByReceiverId" parameterType="int" resultType="com.jwh.dobotochatserver.entity.Message">
+        select * from message where receiverId=#{receiverId} and is_read=0
+    </select>
+</mapper>

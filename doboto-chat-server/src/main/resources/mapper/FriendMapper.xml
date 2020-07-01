@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jwh.dobotochatserver.dao.FriendDao">
+    <!-- insert -->
+    <insert id="insert" parameterType="com.jwh.dobotochatserver.entity.Friend">
+        insert into friend(ownerId,friendId,is_accept,is_new)
+        values(#{ownerId},#{friendId},#{isAccept},#{isNew})
+    </insert>
+
+    <!-- update -->
+    <!-- map 包含3个k-v fieldName-'具体的字段名，要带下划线一定加下划线',fieldValue-'具体修改的值，还有id'-->
+    <update id="updateOne" parameterType="hashmap">
+        update friend set ${fieldName}=#{fieldValue} where id=#{id}
+    </update>
+
+    <update id="acceptFriend" parameterType="int">
+        update friend set is_accept=1 where id=#{id}
+    </update>
+
+    <delete id="deleteFriend" parameterType="int">
+        delete from friend where id=#{id}
+    </delete>
+
+    <update id="changeNewFriendStatus" parameterType="int">
+        update friend set is_new=3 where id=#{id}
+    </update>
+
+    <update id="changeNewFriendStatus2" parameterType="hashmap">
+        update friend set is_new=3 where friendId=#{friendId} and ownerId=#{ownerId}
+    </update>
+
+    <!-- select -->
+    <select id="getById" parameterType="int" resultType="com.jwh.dobotochatserver.entity.Friend">
+        select * from friend where id=#{id}
+    </select>
+
+    <select id="checkIsFriend" parameterType="int" resultType="com.jwh.dobotochatserver.entity.Friend">
+        select * from friend where ownerId=#{ownerId} and friendId=#{friendId}
+    </select>
+    <select id="getByOwnerId" parameterType="int" resultType="com.jwh.dobotochatserver.entity.Friend">
+        select * from friend where ownerId=#{ownerId} and is_accept=1
+    </select>
+
+    <select id="getNewRequestByOwnerId" parameterType="int" resultType="com.jwh.dobotochatserver.entity.Friend">
+        select * from friend where ownerId=#{ownerId} and is_accept=0
+    </select>
+
+    <select id="getNewFriendsByOwnerId" parameterType="int" resultType="com.jwh.dobotochatserver.entity.Friend">
+        select * from friend where ownerId=#{ownerId} and is_accept=1 and is_new=2
+    </select>
+
+
+</mapper>

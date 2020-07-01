@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/menu_icon0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="0px"
+        android:layout_y="66px"
+        android:src="@drawable/menu_icon_0_0" />
+
+    <ImageView
+        android:id="@+id/menu_icon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="115px"
+        android:layout_y="0px"
+        android:src="@drawable/menu_icon_1_0" />
+
+    <ImageView
+        android:id="@+id/menu_icon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="229px"
+        android:layout_y="66px"
+        android:src="@drawable/menu_icon_2_0" />
+
+    <ImageView
+        android:id="@+id/menu_icon3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="229px"
+        android:layout_y="197px"
+        android:src="@drawable/menu_icon_3_0" />
+
+    <ImageView
+        android:id="@+id/menu_icon4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="115px"
+        android:layout_y="262px"
+        android:src="@drawable/menu_icon_4_0" />
+
+    <ImageView
+        android:id="@+id/menu_icon5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="0px"
+        android:layout_y="197px"
+        android:src="@drawable/menu_icon_5_0" />
+
+    <ImageView
+        android:id="@+id/menu_icon6"
+        android:layout_width="98dp"
+        android:layout_height="68dp"
+        android:layout_x="21dp"
+        android:layout_y="41dp"
+        android:src="@drawable/menu_icon_6_0" />
+
+</AbsoluteLayout>

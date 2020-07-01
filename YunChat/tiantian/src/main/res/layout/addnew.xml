@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/contact_bg"
+	android:orientation="vertical">
+	<ScrollView android:layout_weight="4" android:id="@+id/ScrollView1"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:scrollbars="vertical">
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<LinearLayout android:id="@+id/widget205"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+				<ImageButton android:id="@+id/image_button"
+					android:layout_width="60px" android:layout_height="60px"
+					android:src="@drawable/image1" android:scaleType="centerCrop">
+				</ImageButton>
+				<EditText android:id="@+id/username" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:scrollbars="vertical"
+					android:hint="姓名" android:gravity="top" android:layout_gravity="center_vertical" />
+			</LinearLayout>
+
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:layout_marginRight="10dp" android:layout_marginLeft="10dp">
+
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="手机："
+				    android:textColor="@color/font_balck"
+				    android:textSize="20dp" />
+
+				<EditText android:id="@+id/mobilephone"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:scrollbars="vertical" android:gravity="top" android:hint="手机"
+					android:phoneNumber="true" />
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="办公室电话："
+				    android:textColor="@color/font_balck"
+				    android:textSize="20dp" />
+
+				<EditText android:id="@+id/officephone"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:scrollbars="vertical" android:phoneNumber="true"
+					android:hint="办公室电话" android:gravity="top" />
+			</LinearLayout>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="家庭电话："
+				    android:textColor="@color/font_balck"
+				    android:textSize="20dp" />
+
+				<EditText android:id="@+id/familyphone"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:scrollbars="vertical" android:phoneNumber="true"
+					android:hint="家庭电话" android:gravity="top" />
+			</LinearLayout>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="职务职称："
+				    android:textColor="@color/font_balck"
+				    android:textSize="20dp" />
+
+				<EditText android:id="@+id/position" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:scrollbars="vertical"
+					android:hint="职务职称" android:gravity="top" />
+			</LinearLayout>
+
+
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="单位名称："
+				    android:textColor="@color/font_balck"
+				    android:textSize="20dp" />
+
+				<EditText android:id="@+id/company" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:scrollbars="vertical"
+					android:hint="单位名称" android:gravity="top" />
+			</LinearLayout>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="地址："
+				    android:textColor="@color/font_balck"
+				    android:textSize="20dp" />
+
+				<EditText android:id="@+id/address" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:scrollbars="vertical"
+					android:hint="地址" android:gravity="top" />
+			</LinearLayout>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+				<TextView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:text="邮政编码："
+					android:textColor="@color/font_balck"
+					android:textSize="20dp" />
+				<EditText android:id="@+id/zipcode" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:scrollbars="vertical"
+					android:hint="邮政编码" android:gravity="top" />
+			</LinearLayout>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+				<TextView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:text="E-mail："
+					android:textColor="@color/font_balck"
+					android:textSize="20dp" />
+				<EditText android:id="@+id/email" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:scrollbars="vertical"
+					android:hint="E-mail" android:gravity="top" />
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+				<TextView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:text="其他联系方式："
+					android:textColor="@color/font_balck"
+					android:textSize="20dp" />
+				<EditText android:id="@+id/othercontact"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:scrollbars="vertical" android:hint="其他联系方式"
+					android:gravity="top" />
+			</LinearLayout>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+				<TextView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:text="备注："
+					android:textColor="@color/font_balck"
+					android:textSize="20dp" />
+				<EditText android:id="@+id/remark" android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:scrollbars="vertical"
+					android:hint="备注" android:gravity="top" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+		<Button android:id="@+id/save" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:text="保存" />
+		<Button android:id="@+id/btn_return" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:text="返回" />
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/user"/>
+
+        <EditText
+            android:id="@+id/my_new_name"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="5dp"
+            android:hint="昵称..."
+            android:textSize="18dp"
+            android:background="@drawable/d_edit_linear"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/age"/>
+
+        <EditText
+            android:id="@+id/my_new_age"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="5dp"
+            android:hint="年龄..."
+            android:textSize="18dp"
+            android:background="@drawable/d_edit_linear"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/city"/>
+
+        <EditText
+            android:id="@+id/my_new_city"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="5dp"
+            android:hint="所在城市..."
+            android:textSize="18dp"
+            android:background="@drawable/d_edit_linear"/>
+    </LinearLayout>
+
+</LinearLayout>

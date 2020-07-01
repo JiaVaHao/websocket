@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee">
+
+    <FrameLayout
+        android:id="@+id/search_friend_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.jwh.yunchat.view.Title
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#00eeeeee">
+
+        <TextView
+            android:id="@+id/open_search_friend"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/input_edit"
+            android:text="搜索好友..."
+            android:textSize="16dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/open_new_friend_panel"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="#00eeeeee"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:descendantFocusability="blocksDescendants">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/heading" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="75dp"
+            android:text="好友申请"
+            android:textColor="#2B2828"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/has_new_friend"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:src="@drawable/hasnew5" />
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/new_friend_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/friend_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="452dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+
+    <com.jwh.yunchat.view.Navigation
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

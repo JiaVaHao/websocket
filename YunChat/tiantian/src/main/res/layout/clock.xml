@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/menuBack"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/menu_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:text="天天多功能手机助手"
+        android:textColor="@drawable/white"
+        android:textSize="24dip"
+        android:background="@drawable/menu_title"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:gravity="center_horizontal">
+
+        <com.activity.alarm.DigitalClock
+            android:id="@+id/dClock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@drawable/black"
+            android:textSize="80sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/darker_gray"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/tv_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:textColor="@android:color/darker_gray"
+                android:text="TextView" />
+
+        </LinearLayout>
+
+        <AnalogClock
+            android:id="@+id/analogClock1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal" 
+            android:layout_marginTop="10dip">
+
+            <Button
+                android:id="@+id/btn_setclock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/settime" 
+                android:text="@string/start_clock"
+                android:textColor="@color/green"
+                android:textSize="30dip"/>
+            <Button
+                android:id="@+id/btn_settime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/settime"
+                android:text="@string/set_time"
+                android:textColor="@color/green"
+                android:layout_marginLeft="10dip"
+                android:textSize="30dip" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

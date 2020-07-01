@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <SurfaceView
+        android:id="@+id/camrea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:id="@+id/seekbar_focal"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp" />
+    <ImageView
+        android:id="@+id/btn_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/photo" />
+
+    <ImageView
+        android:id="@+id/btn_backcapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/btn_flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/light_auto" />
+
+    <Button
+        android:id="@+id/button_rec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_flash"
+        android:layout_marginLeft="100px"
+        android:layout_toRightOf="@+id/btn_flash"
+        android:text="@string/rec" />
+
+    <Button
+        android:id="@+id/button_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_backcapter"
+        android:layout_marginRight="100px"
+        android:layout_toLeftOf="@+id/btn_backcapter"
+        android:text="@string/video" />
+
+</RelativeLayout>

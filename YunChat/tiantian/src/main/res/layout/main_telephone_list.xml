@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/contact_bg" >
+
+
+    <LinearLayout android:id="@+id/list_ll"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		>
+		<ListView android:id="@+id/lv_userlist" android:layout_above="@+id/gv_buttom_menu"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+		</ListView>
+	</LinearLayout>
+    
+	<GridView android:id="@+id/gv_buttom_menu"
+		android:layout_height="65dp" android:layout_width="fill_parent"
+		android:layout_alignParentBottom="true" android:visibility="gone">
+	</GridView>
+
+	<LinearLayout android:id="@+id/ll_search"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+		android:layout_above="@+id/gv_buttom_menu" android:visibility="gone">
+		<EditText android:id="@+id/et_search" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:hint="Enter the name or phone"
+			android:textSize="18dp">
+		</EditText>
+	</LinearLayout>
+
+</RelativeLayout>
